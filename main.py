@@ -24,7 +24,21 @@ def main():
 
 def add_expense(expenses):
     # We'll build this together
+    category = input("Category: ")
+    amount = input("Money: ")
+    expenses.append(category)
+    for items in expenses:
+        if category == items:
+            expenses.update({category + ":" + amount})
+            pass
+        else:
+            expenses.
     pass
+
+
+    print(expenses)
+
+    return expenses
 
 def view_expenses(expenses):
     # We'll build this together  
